@@ -5,6 +5,14 @@
 import math
 from math import sqrt
 
+#importing myownmodule
+import mymodule
+from mymodule import greet
+
 #square root
 print(math.sqrt(16))
 print(sqrt(16))
+
+#greet
+mymodule.greet("shees")
+greet("shees")
