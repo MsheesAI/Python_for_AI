@@ -54,3 +54,35 @@ student_1.is_eligible()
 
 student_2.info()
 student_2.is_eligible()
+
+#Encapsulation
+
+print("_________ENCAPSULATION_________")
+print("                               \n")
+
+class Person:
+    def __init__(self,name,salary):
+        self.name = name
+        self.__salary = salary #private attribute
+    def get_salary(self): #accessing private attribute
+        return self.__salary
+
+person_1 = Person("shees",1000000)
+print(person_1.get_salary())
+
+class Person:
+    @property
+    def salary(self):
+        return self.__salary
+    def __init__(self,name,salary):
+        self.__salary = salary
+    @property
+    def get_salary(self):
+        return self.__salary
+    
+person_2 = Person('ALI',20000)
+s = person_2.get_salary
+print(s)
+
+
+        
