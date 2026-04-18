@@ -71,3 +71,18 @@ person_1 = Person("shees",1000000)
 print(person_1.get_salary())
 
 
+#Inheritance
+
+print("_________INHERITANCE_________")
+print("                               \n")
+
+class Animal:
+    @property
+    def speak(self):
+        print("some sound")
+    
+class Cat(Animal):
+    pass
+
+cat_1 = Cat()
+cat_1.speak
