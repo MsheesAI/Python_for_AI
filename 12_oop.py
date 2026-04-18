@@ -82,7 +82,13 @@ class Animal:
         print("some sound")
     
 class Cat(Animal):
-    pass
+    def speak(self): #Method overriding
+        print("Meow")
 
 cat_1 = Cat()
-cat_1.speak
+cat_1.speak()
+
+#Polymorphism
+
+print("_________POLYMORPHISM_________")
+print("                               \n")
