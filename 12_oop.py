@@ -19,3 +19,31 @@ mycar.engine("turbo v9")
 
 my_brother_car=Car("loyal cars","sheikh muhammad shafayee shoaib")
 my_brother_car.engine("loyal 1b")
+
+#Accessing Objects attribute
+
+class Student:
+    def __init__(self,name,age,grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+    def info(self):
+        print(f"student name : {self.name}")
+        print(f"student age : {self.age}")
+        print(f"student grade : {self.grade}")
+        
+    def is_eligible(self):
+        if self.age>=15:
+            print(self.name , "is eligible")
+        else:
+            print(self.name , "is not eligible")
+
+#creating instance
+student_1 = Student("Shees",14,"9th")
+student_2 = Student("Shafayee",20,"12th")
+
+
+#Accessing attributes
+print(student_1.name)
+print(student_2.age)
+
