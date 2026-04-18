@@ -47,3 +47,10 @@ student_2 = Student("Shafayee",20,"12th")
 print(student_1.name)
 print(student_2.age)
 
+#calling methods
+
+student_1.info()
+student_1.is_eligible()
+
+student_2.info()
+student_2.is_eligible()
